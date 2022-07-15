@@ -74,7 +74,7 @@ app.post("/call",callValidation, async (req, res, next) => {
             const response = await Calls.create({
                 user, phone, name, timestamp:date
             })
-            res.json({status: 'success'})
+            res.json({status: 'success',data:"calling"})
         } catch (error) {
             res.json({status: "error", error: "500"})
             console.log(error)
