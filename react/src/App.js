@@ -1,7 +1,6 @@
 import {useState} from "react"
 import Login from "./components/Login/Login"
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom';
-import Registration from "./components/Register/Registration";
 import List from "./components/Inner page/List"
 import ProtectedRoutes from "./ProtectedRoutes"
 import Cookies from "universal-cookie";
@@ -10,8 +9,6 @@ const cookies = new Cookies();
 
 function App() {
     const [logedIn, setLogedIn] = useState(cookies.get("token") !== undefined)
-    console.log(logedIn)
-    console.log(cookies.get("token"))
     return (
         <BrowserRouter>
             <Routes>

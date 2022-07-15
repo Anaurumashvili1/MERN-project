@@ -2,10 +2,8 @@ import {useState} from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
 
-
 const Login = ({cookies,setLogedIn}) => {
     let navigate = useNavigate();
-
     const [usernameInput, setUsernameInput] = useState("")
     const [passwordInput, setPasswordInput] = useState("")
     const [error, setError] = useState(false)
@@ -18,6 +16,7 @@ const Login = ({cookies,setLogedIn}) => {
                 setLogedIn(true)
                 cookies.set("token", token);
                 navigate(`/list`)
+
             } else {
                 setError(true)
             }

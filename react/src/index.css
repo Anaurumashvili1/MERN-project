@@ -8,6 +8,15 @@ body {
     letter-spacing: 0.3px;
 
 }
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
 p {
     font-size: 14px;
@@ -35,14 +44,27 @@ button {
     color: lightgray;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.registration button, .login-wrapper button {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: fit-content;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: block;
+
 }
 
-* {
-    box-sizing: border-box;
+.logout {
+    font-size: 18px;
+    padding: 5px 10px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 90vw;
+    width: fit-content;
+
 }
+
 
 .login-wrapper, .registration {
     background: #232426;
@@ -54,7 +76,7 @@ code {
     border-radius: 8px;
 }
 
-.registration input, .login-wrapper input {
+  input {
     border-radius: 8px;
     border: 1px solid #232426;
     padding: 2px 8px;
@@ -66,15 +88,6 @@ code {
 
 }
 
-.registration button, .login-wrapper button {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: fit-content;
-    font-size: 18px;
-    padding: 5px 10px;
-    display: block;
-}
 
 .registration p login-wrapper p {
     margin: 20px 0;
@@ -88,4 +101,50 @@ code {
     margin-top: 10px;
     margin-left: 4px;
     font-size: 12px;
+}
+
+.person {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    text-align: center;
+}
+
+.list-header {
+    display: flex;
+    gap: 30px;
+    background: #3d3e42;
+    align-items: baseline;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.person p, .list-header p{
+    width:90px;
+    /*text-align: center;*/
+}
+.list-header p {
+    font-weight:bold ;
+}
+
+.list-wrapper{
+    width: fit-content;
+    margin:auto;
+    background: #232426;
+    padding:10px 25px;
+}
+.search{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    align-items: center;
+}
+.search input{
+    height:30px;
+    width:160px;
+    color:white;
+    background: transparent;
+    border:#774274FF solid 2px;
+    border-radius: 12px;
 }
