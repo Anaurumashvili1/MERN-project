@@ -54,6 +54,7 @@ const Registration = () => {
             {error && <span className={'error'}>Username already exists</span>
             } <Input title={'Password:'} handleChange={handlePassword} type={'password'} value={value.password}
                      valid={valid.password}/>
+            <p className={"passwordP"}>password should be at least 8 char long, should include at least one uppercase letter and at least one number</p>
             <Input title={'Confirm Password:'} handleChange={handleConfirmPassword} type={'password'}
                    value={value.confirmPassword} valid={valid.confirmPassword}/>
             <Submit handleSubmit={handleSubmit} formIsValid={formIsValid}/>

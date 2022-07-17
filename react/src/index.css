@@ -8,6 +8,7 @@ body {
     letter-spacing: 0.3px;
 
 }
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -44,6 +45,12 @@ button {
     color: lightgray;
 }
 
+.passwordP {
+    font-size:9px;
+    width:200px;
+    margin-top:10px;
+}
+
 .registration button, .login-wrapper button {
     margin: auto;
     margin-top: 30px;
@@ -76,7 +83,7 @@ button {
     border-radius: 8px;
 }
 
-  input {
+input {
     border-radius: 8px;
     border: 1px solid #232426;
     padding: 2px 8px;
@@ -120,31 +127,34 @@ button {
     margin: 10px 0;
 }
 
-.person p, .list-header p{
-    width:90px;
+.person p, .list-header p {
+    width: 90px;
     /*text-align: center;*/
 }
+
 .list-header p {
-    font-weight:bold ;
+    font-weight: bold;
 }
 
-.list-wrapper{
+.list-wrapper {
     width: fit-content;
-    margin:auto;
+    margin: auto;
     background: #232426;
-    padding:10px 25px;
+    padding: 10px 25px;
 }
-.search{
-    display:flex;
+
+.search {
+    display: flex;
     justify-content: center;
-    gap:30px;
+    gap: 30px;
     align-items: center;
 }
-.search input{
-    height:30px;
-    width:160px;
-    color:white;
+
+.search input {
+    height: 30px;
+    width: 160px;
+    color: white;
     background: transparent;
-    border:#774274FF solid 2px;
+    border: #774274FF solid 2px;
     border-radius: 12px;
 }

@@ -10,7 +10,12 @@ const Call = ({name, phone, cookies}) => {
     };
 
     const call = ()=>{
-        axios.post("/call",{name, phone},headers).then(res=>console.log(res)).catch(error=>console.log(error))
+        axios.post("/call",{name, phone},headers).then(res=> {
+            console.log(res)
+            if(res.data.data){
+                alert("calling")
+            }
+        }).catch(error=>console.log(error))
 
     }
     return <>
